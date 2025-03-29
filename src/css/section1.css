@@ -1,0 +1,103 @@
+.section1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.section1__logo {
+    display: none;
+}
+
+
+.section1__h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.section1__word {
+    color: #006241;
+}
+
+.section1__p {
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+/* TAMAÑO TABLET: 768PX */
+@media (min-width: 768px) {
+
+    .section1 {
+        flex-direction: row;
+        padding: 0px 40px;
+        margin-bottom: 50px;
+    }
+
+    .section1__prologo {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-right: 30px;
+    }
+
+    .section1__h1 {
+        font-size: 3.5em;
+    }
+
+    .section1__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .section1__img-logo {
+        width: 80%;
+    }
+}
+
+/* TAMAÑO DESKTOP S: 1024PX */
+@media (min-width: 1024px) {
+    
+    .section1 {
+        padding: 0px 50px;
+        margin-bottom: 60px;
+    }
+
+    .section1__h1 {
+        font-size: 5em;
+        line-height: 115%;
+    }
+
+    .section1__p {
+        font-size: 1.25em;
+        margin-top: 25px;
+    }
+
+    .section1__img-logo {
+        width: 90%;
+    }
+}
+
+/* TAMAÑO DESKTOP S: 1200PX */
+@media (min-width: 1200px) {
+    .section1 {
+        padding: 0px 70px;
+        margin-top: 125px;
+    }
+
+    .section1__h1 {
+        padding-right: 30px;
+    }
+
+    .section1__p {
+        padding-right: 20px;
+    }
+
+    .section1__img-logo {
+        width: 70%;
+    }
+}

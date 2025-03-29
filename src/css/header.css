@@ -1,0 +1,84 @@
+.header{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006241;
+    height: 10vh;
+    padding: 10px 15px 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    box-shadow: 0px 0px 30px 0px black;
+}
+.header__nav, .header__user {
+    display: none;
+}
+
+.header__logo {
+    object-fit: fill;
+    height: 90%;
+}
+.header__menu {
+    object-fit: fill;
+    height: 60%;
+    filter: invert(1);;
+    cursor: pointer;
+}
+
+
+/* TAMAÑO TABLET: 768PX */
+@media (min-width: 768px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__user {
+        display: block;
+        object-fit: fill;
+        height: 80%;
+        filter: invert(1);;
+        cursor: pointer;
+    }
+
+    .header__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50vw;
+    }
+
+    .header__nav-item {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/* TAMAÑO DESKTOP S: 1024PX */
+@media (min-width: 1024px) {
+
+    .header__nav {
+        width: 40vw;
+    }
+
+    .header__nav-item {
+        font-size: 1.10em;
+    }
+}
+
+/* TAMAÑO DESKTOP L: 1200PX */
+@media (min-width: 1200px) {
+
+    /* HEADER */
+    
+    .header__nav {
+        width: 35vw;
+    }
+
+    .header__nav-item {
+        font-size: 1.20em;
+    }
+}

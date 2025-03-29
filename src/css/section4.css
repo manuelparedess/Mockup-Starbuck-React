@@ -1,0 +1,94 @@
+.section4 {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+}
+
+.section4__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #006241;
+    padding-bottom: 7.5px;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.section4__h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    padding: 10px 15px;
+}
+
+.section4__word {
+    color: yellow;
+}
+
+.section4__p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 100;
+    color: white;
+    padding: 0px 15px;
+}
+
+.section4__button {
+    max-width: max-content;
+    margin: 0px 0px 10px 15px;
+    padding: 5px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.80em;
+    background-color: #006241;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.section4__button:hover {
+    background-color: yellow;
+    border: 1px solid yellow;
+    transition: 1s;
+}
+
+.section4__circle {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    background-color: #d8f007;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+}
+
+/* TAMAÑO TABLET: 768PX */
+@media (min-width: 768px) {
+    .section4 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 50px 0px;
+    }
+
+    .section4__card {
+        width: 40%;
+    }
+}
+
+/* TAMAÑO DESKTOP S: 1024PX */
+@media (min-width: 1024px) {
+    .section4__h2 {
+        font-size: 1.75em;
+        padding-bottom: 15px;
+    }
+
+    .section4__p {
+        font-size: 1.15em;
+    }
+
+    .section4__circle {
+        padding: 15px;
+    }
+}
+

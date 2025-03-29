@@ -1,0 +1,134 @@
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #141414;
+    padding: 60px 15px 50px 15px;
+}
+
+.section3__form {
+    padding: 10px;
+    background-color: #006241;
+}
+
+.section3__h1 {
+    color: #006241;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.80em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.section3__form-email, .section3__form-comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.section3__label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15em;
+    color: white;
+}
+
+.section3__input1 {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.90em;
+    padding: 5px;
+    color: white;
+}
+
+.section3__input2 {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    padding: 5px;
+    color: white;
+    resize: none;
+}
+
+.section3__input1::placeholder, .section3__input2::placeholder {
+    color: #006241;
+}
+
+.section3__input1:focus, .section3__input2:focus {
+    background-color: #141414;
+}
+
+.section3__button {
+    padding: 3.5px 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    background-color: #006241;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.section3__button:hover {
+    background-color: yellow;
+    border: 2px solid yellow;
+    transition: 1s;
+}
+
+/* TAMAÑO TABLET: 768PX */
+@media (min-width: 768px) {
+    .section3 {
+        align-items: center;
+        padding: 80px 0px 50px 0px;
+    }
+
+    .section3__form {
+        width: 60%;
+    }
+
+    .section3__h1 {
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+
+    .section3__form-email, .section3__form-comment {
+        margin: 10px;
+    }
+
+    .section3__label {
+        font-size: 1.25em;
+        margin-bottom: 10px;
+    }
+
+    .section3__button {
+        margin: 15px 10px;
+        font-size: 1em;
+        padding: 3.5px 80px;
+    }
+}
+
+/* TAMAÑO DESKTOP S: 1024PX */
+@media (min-width: 1024px) {
+    .section3 {
+        padding-bottom: 70px;
+    }
+
+    .section3__form-email, .section3__form-comment {
+        margin: 20px 15px;
+    }
+
+    .section3__input2 {
+        padding: 5px 0px 80px 5px;
+    }
+
+    .section3__buttons {
+        display: flex;
+    }
+}
+
+/* TAMAÑO DESKTOP L: 1200PX */
+@media (min-width: 1200px) {
+    .section3__form {
+        width: 45%;
+    }
+}
